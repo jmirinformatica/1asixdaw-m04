@@ -8,9 +8,6 @@ app = Flask(__name__)
 # mostro missatges de log de nivell INFO o superior
 app.logger.setLevel(logging.INFO)
 
-# afegeixo els paràmetres del config.py
-app.config.from_object("config.Config")
-
 @app.route('/')
 def index():
     return render_template("index.html")

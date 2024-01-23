@@ -21,7 +21,7 @@ Instal·la el requisits:
 Alternativament, els requisits es poden instal·lar manualment:
 
     pip install -U pip
-    pip install -U flask python-dotenv lxml requests
+    pip install -U flask lxml requests
 
 Per a generar el fitxer de requiriments:
 
@@ -30,10 +30,6 @@ Per a generar el fitxer de requiriments:
 Per desactivar l'entorn:
 
     deactivate
-
-### Fitxer .env
-
-Crea el fitxer `.env` a partir del `.env.exemple`
 
 ### Inicia l'aplicació
 
@@ -57,7 +53,7 @@ Des de l'opció de `Run and Debug`, crea un fitxer animenat `launch.json` amb el
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "wsgi.py",
+                "FLASK_APP": "app.py",
                 "FLASK_DEBUG": "1"
             },
             "args": [
