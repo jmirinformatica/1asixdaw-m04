@@ -1,6 +1,6 @@
-#FpInfor #Daw #DawMp4 #Asix #AsixMp4
+# XSLT amb Flask
 
-# 1asixdaw-m04-xslt
+Aplicació web desenvolupada en Flask que fa mostra fitxers RSS transformats amb XSLT.
 
 ## Setup
 
@@ -39,7 +39,7 @@ Crea el fitxer `.env` a partir del `.env.exemple`
 
 Executa:
 
-    flask run
+    flask run --debug
 
 I obre un navegador a l'adreça: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
