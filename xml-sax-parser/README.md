@@ -2,6 +2,6 @@
 
 Exemples de codi que llegeix un XML i genera un HTML mol simple.
 
-* [diaris1.py](./diaris1.py): genera l'HTML per consola.
-* [diaris2.py](./diaris2.py): genera l'HTML en un fitxer.
-* [diaris3.py](./diaris3.py): fa servir variables d'estat per a generar un millor HTML.
+* [diaris_sax1.py](./diaris_sax1.py): genera l'HTML per consola.
+* [diaris_sax2.py](./diaris_sax2.py): genera l'HTML en un fitxer.
+* [diaris_sax3.py](./diaris_sax3.py): fa servir variables d'estat per a generar un millor HTML.
