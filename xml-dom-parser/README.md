@@ -1,6 +1,3 @@
 # XML DOM Parser
 
-Exemple de codi que llegeix un XML i genera un HTML.
-
-* [diaris_dom1.py](./diaris_dom1.py): genera l'HTML per consola.
-* [diaris_dom2.py](./diaris_dom2.py): genera l'HTML en un fitxer.
+Exemples de codi amb python per a llegit un XML. Es fa servir la llibria [minidom](https://docs.python.org/3/library/xml.dom.minidom.html).
