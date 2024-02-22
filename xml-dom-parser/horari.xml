@@ -2,6 +2,7 @@
     <alumne>
         <nom>Marta López</nom>
         <curs>1r d'ESO</curs>
+        <foto>https://i.ibb.co/bLfPv2Z/marta-lopez.jpg</foto>
     </alumne>
     <colors>
         <assignatura color="#FF0000">Matemàtiques</assignatura>
