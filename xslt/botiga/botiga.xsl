@@ -15,23 +15,38 @@
                 <title>Exemple de XSLT</title>
             </head>
             <body>
-                <h2>Els meus bluerays</h2>
-                <table>
-                    <tr>
-                        <th>Títol</th>
-                        <th>Director</th>
-                    </tr>
-                    <xsl:for-each select="botiga/bluray">
+                <h2>Botiga <xsl:value-of select="botiga/name"/></h2>
+                <h3>Adreça: <xsl:value-of select="botiga/address"/></h3>
+                <h3>URL: 
+                    <a target="_blank">
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="botiga/url"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="botiga/url"/>
+                    </a>
+                </h3>
+
+                <xsl:for-each select="botiga/stock/category">
+                    <h4><xsl:value-of select="@name"/></h4>
+                    <table>
                         <tr>
-                            <td>
-                                <xsl:value-of select="titol"/>
-                            </td>
-                            <td>
-                                <xsl:value-of select="director"/>
-                            </td>
+                            <th>Name</th>
+                            <th>Brand</th>
                         </tr>
-                    </xsl:for-each>
-                </table>
+                        <xsl:for-each select="product">
+                            <tr>
+                                <td>
+                                    <xsl:value-of select="name"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="brand"/>
+                                </td>
+                            </tr>
+                        </xsl:for-each>
+                    </table>
+
+                </xsl:for-each>
+
             </body>
         </html>
     </xsl:template>
