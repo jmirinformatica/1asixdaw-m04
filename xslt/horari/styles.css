@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .capcalera {
+    display: block;
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+  }
+  
+  .setmana {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  a {
+    color: black;
+  }
+
+  .dia {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 5); /* Dividiu el 100% per al nombre de dies de la setmana */
+  }
+  
+  .hora {
+    background-color: #ccc;
+    padding: 5px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  .classe {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #DDD;
+  }
+
+  .classe1 {
+    background-color: #ff9999;
+  }
+  
+  .classe2 {
+    background-color: #99ff99;
+  }
+  
+  .classe3 {
+    background-color: #9999ff;
+  }
+  
+  .classe4 {
+    background-color: #ffff99;
+  }
+  
+  .classe5 {
+    background-color: #ff99ff;
+  }
+  
+  .classe6 {
+    background-color: #99ffff;
+  }
+  
+  .classe7 {
+    background-color: #ffcc99;
+  }
+  
+  .classe8 {
+    background-color: #cc99ff;
+  }
+
+  .enllacos {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .enllacos h2 {
+    margin-bottom: 10px;
+  }
+  
+  .enllacos ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .enllacos ul li {
+    margin-bottom: 10px;
+  }
+  
+  .enllacos ul li a {
+    text-decoration: underline;
+    color: #333;
+  }
+  
+  .enllacos ul li a:hover {
+    color: #666;
+  }
+  
