@@ -10,21 +10,26 @@ def demo0():
 
 @app.route("/demo1")
 def demo1():
-    return render_template("hola.html")
+    return render_template("demo/hola.html")
 
 @app.route("/demo2")
 def demo2():
-    return render_template("demo.html", nom = "Lola", edat=6)
+    return render_template("demo/exemple.html", nom = "Lola", edat=6)
 
 @app.route("/demo3/<nom>/<int:edat>")
 def demo3(nom, edat):
-    return render_template("demo.html", nom = nom, edat = edat)
+    return render_template("demo/exemple..html", nom = nom, edat = edat)
 
 @app.route("/demo4")
 def demo4():
     nom = request.args.get('nom', default = "Desconegut/a", type = str)
     edat = request.args.get('edat', default = 0, type = int)
-    return render_template("demo.html", nom = nom, edat = edat)
+    return render_template("demo/exemple..html", nom = nom, edat = edat)
+
+@app.route("/demo5")
+def demo5():
+    # pàgina mostrant un exemple amb bootstrap
+    return render_template("demo/boostrap.html")
 
 @app.route('/')
 def index():
