@@ -18,13 +18,13 @@ def demo2():
 
 @app.route("/demo3/<nom>/<int:edat>")
 def demo3(nom, edat):
-    return render_template("demo/exemple..html", nom = nom, edat = edat)
+    return render_template("demo/exemple.html", nom = nom, edat = edat)
 
 @app.route("/demo4")
 def demo4():
     nom = request.args.get('nom', default = "Desconegut/a", type = str)
     edat = request.args.get('edat', default = 0, type = int)
-    return render_template("demo/exemple..html", nom = nom, edat = edat)
+    return render_template("demo/exemple.html", nom = nom, edat = edat)
 
 @app.route("/demo5")
 def demo5():
