@@ -1,8 +1,9 @@
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, request, render_template, redirect, url_for, flash
 from flask import request
 import feedparser
 
 app = Flask(__name__)
+app.secret_key = '¡3248 97320983 bkjxdlrkfj k2 r9p874989387 98p78oiyylkhçç'
 
 #
 # Exemples inicials de flask
@@ -69,7 +70,9 @@ def insert():
         # Aquí hauríem de fer alguna cosa amb producte i quantitat
         # com per exemple un insert a la base de dades
 
-        return render_template("exemples/insert/insert_confirmation.html", producte = producte, quantitat = quantitat)
+        # https://www.seobility.net/es/wiki/Post/Redirect/Get
+        flash(f"El producte {producte} amb quantitat {quantitat} s'ha inserit correctament")
+        return redirect(url_for('insert'))
 
 @app.route('/')
 def index():
